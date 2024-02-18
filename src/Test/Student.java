@@ -40,6 +40,16 @@ public class Student {
 	
 	
 
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
+
 	public int getTotal() {
 		return korscore+engscore+mathscore;
 	}
