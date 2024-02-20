@@ -6,6 +6,9 @@ public class Car {
 	int carType;
 	double power;
 	
+	
+	private int aaa;
+	
 	Car(String brand,String name,int carType,double power){
 		this.brand=brand;
 		this.name=name;
@@ -30,6 +33,16 @@ public class Car {
 	void right() {
 		System.out.println("우로 갑니다");
 	}
+	
+	
+	public int getAaa() {            //값을 불러옴
+		return aaa;
+	}
+	public void setAaa(int aaa) {    //값을 저장
+		this.aaa = aaa;
+	}
+	
+	
 	
 	
 }

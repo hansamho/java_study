@@ -56,7 +56,11 @@ public class ExCar {
 		System.out.println("car4.name:"+ car4.name);
 		System.out.println("car4.carType:"+ car4.carType);
 		System.out.println("car4.power:"+ car4.power);
+		System.out.println("========================");
 		
+//		car.aaa=1; 에러
+		car.setAaa(1);
+		System.out.println("car.getAaa(): "+ car.getAaa());
 	}
 
 }
