@@ -18,19 +18,19 @@ public class ExLanguage {
 //		listString.set(2, "Tony");
 //		listString.set("Tony");
 		
-		listStrings.add("Stark");
-		listStrings.add("Tony");
-		
-		for(int i=0;i<listStrings.size(); i++) {
-			System.out.println(listStrings.get(i));
-		}
-		System.out.println("=========");
-		
-		for(String listString: listStrings) {    //데이터 있는 만큼 루프해서 값 출력
-			System.out.println(listString);
-		}
-		
-		System.out.println("========");
+//		listStrings.add("Stark");
+//		listStrings.add("Tony");
+//		
+//		for(int i=0;i<listStrings.size(); i++) {
+//			System.out.println(listStrings.get(i));
+//		}
+//		System.out.println("=========");
+//		
+//		for(String listString: listStrings) {    //데이터 있는 만큼 루프해서 값 출력
+//			System.out.println(listString);
+//		}
+//		
+//		System.out.println("========");
 		
 		List<Language> languages= new ArrayList<Language>(); //list에 객체를 담는다.
 		
