@@ -1,20 +1,28 @@
 package Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StudentTest {
 
 	public static void main(String[] args) {
-		Student stu=new Student("Tony", 70, 80, 90);
-		System.out.println(stu);
-		System.out.println("===============================");
+		
+		List<Student> students=new ArrayList<Student>();
+		
+//		Student student1=new Student("Tony", 80, 75, 90);
+//		
+//		students.add(student1);
 		
 		
-		Student stu2=new Student("Tom", 65, 80, 68);
-		System.out.println(stu2);
-		System.out.println("===============================");
+		students.add(new Student("Tony", 74, 75, 90));
+		students.add(new Student("Tom", 85, 76, 88));
+		students.add(new Student("Jennie", 88, 95, 69));
+		
+		for(Student  student: students) {
+			System.out.println(student);
+		}
 		
 		
-		Student stu3=new Student("Jackson", 77, 65, 80);
-		System.out.println(stu3);
 		
 	}
 

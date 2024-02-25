@@ -2,69 +2,61 @@ package Test;
 
 
 public class Student {
-	String name;
-	int korscore;
-	int engscore;
-	int mathscore;
-	int total;
-	double avg;
-	
-	public Student(String name,int korscore,int engscore,int mathscore) {
-		this.name=name;
-		this.korscore=korscore;
-		this.engscore=engscore;
-		this.mathscore=mathscore;
-	}
+	private String name;
+	private int korean;
+	private int english;
+	private int math;
 	
 	
 	public String getName() {
 		return name;
 	}
-	
-
-	public int getKorscore() {
-		return korscore;
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getKorean() {
+		return korean;
+	}
+	public void setKorean(int korean) {
+		this.korean = korean;
+	}
+	public int getEnglish() {
+		return english;
+	}
+	public void setEnglish(int english) {
+		this.english = english;
+	}
+	public int getMath() {
+		return math;
+	}
+	public void setMath(int math) {
+		this.math = math;
 	}
 	
-
-	public int getEngscore() {
-		return engscore;
-	}
-
-	
-	public int getMathscore() {
-		return mathscore;
+	public Student(String name, int korean, int english, int math) {
+		this.name=name;
+		this.korean=korean;
+		this.english=english;
+		this.math=math;
 	}
 	
-	
-	
-	
-
-	public void setTotal(int total) {
-		this.total = total;
-	}
-
-
-	public void setAvg(double avg) {
-		this.avg = avg;
-	}
-
-
-	public int getTotal() {
-		return korscore+engscore+mathscore;
+	public Student() {
+		
 	}
 	
-	public double getAvg() {
-		return getTotal()/3.0;
+	public int sum() {
+		return korean+english+math;
 	}
 	
-	
-	
-	
-	
+	public double avg() {
+		double avg=sum()/3;
+		return avg;
+	}
 	
 	@Override
 	public String toString() {
-		return name + ":" + "국어점수:" + korscore + "영어점수:" + engscore+"수학점수:" + mathscore+ "총점:"+getTotal()+ "평균:"+ getAvg();
+		return name+"의 국어점수는:"+korean+" "+"영어점수는:"+english+" "+"수학점수는:"+math+" " +"총점은:"+sum()+" "+"평균은:"+avg();
 	}
+	
+	
 }
